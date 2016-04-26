@@ -1,0 +1,13 @@
+<div>
+	<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>用户注册</div>-->
+	<yy-header title="用户注册" hideBackBtn="false"></yy-header>
+	<div class="yyLogo"><img src="images/youyou-logo.png" width="140"/></div>
+	<form name="myForm">
+	<p class="loginInfo"><input name="phone" ng-model="params.phone" type="text" required placeholder="请输入手机号码" ng-blur='fnBlur()' ng-focus='fnFocus()'/></p>
+	<span class="phoneEor" ng-show="phoner">请输入正确手机号码</span>
+	<p class="loginInfo loginD"><input name="code" ng-model="params.code" type="text" placeholder="短信验证码"/><span class="verification" ng-class="paraclass" ng-click="verification()" ng-bind="paracont"></span></p>
+	<p class="loginInfo"><input type="password" placeholder="输入密码" ng-model="params.password" name="password"/></p>
+	</form>
+	<p class="infotips">注册即视为同意《游友用户注册协议》</p>
+	<div class="payBtn loginBtn"><input value="下一步" type="button" ng-click="RegSubmit()"/></div>
+</div>

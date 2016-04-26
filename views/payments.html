@@ -1,0 +1,10 @@
+<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>修改手机号</div>-->
+<yy-header title="收支明细" hideBackBtn="false"></yy-header>
+<div id="wrapper">
+	<ul>
+		<li class="payDetails" ng-repeat="info in dInfo">
+			<h3>{{info.targetName}}<span class="right-arrow fc_green">+{{info.money}}</span></h3>
+			<p class="fc_999">{{info.updateDate}}</p>
+		</li>
+	</ul>
+</div>

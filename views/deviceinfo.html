@@ -1,0 +1,20 @@
+<div>
+	<div class="mask" ng-show='deviceShow'>
+	<div class="inmask">
+		<img src="images/device.jpg"/>
+		<div class="payBtn loginBtn close"><input type="button" value="关闭" ng-click="Devclose()"/></div>
+	</div>
+</div>
+<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>设备激活</div>-->
+<yy-header title="设备激活" hideBackBtn="false"></yy-header>
+<form name="myForm">
+	<p class="loginInfo"><input name="username" ng-model="username" type="text" placeholder="姓名"/></p>
+	<span class="phoneEor fc_999">以方便享受客户服务，获取增值服务</span>
+	<p class="loginInfo"><input type="email" name="email" ng-model="email" placeholder="邮箱"/></p>
+	<p><span class="phoneEor" ng-show="myForm.email.$error.email">请输入正确邮箱</span></p>	
+	<span class="phoneEor fc_999">以方便接收漫游上网明细账单</span>
+	<p class="loginInfo"><input name="mifi" ng-model="mifi" type="text" placeholder="设备编码"/></p>
+	<span class="phoneEor fc_999">在设备的背面，<span class="fc_f00" ng-click="Devopen()">点击查看示意图</span></span>
+</form>
+<div class="payBtn loginBtn mt_20"><input value="下一步" type="button" ng-click="deviceSub()"/></div>
+</div>

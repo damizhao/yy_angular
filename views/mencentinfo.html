@@ -1,0 +1,15 @@
+<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>会员中心</div>-->
+<yy-header title="会员中心" hideBackBtn="false"></yy-header>
+<div class="account">
+	<span>{{username}}</span>
+	<a ui-sref='modifyname({oldname:username})' class="right-arrow"><img src="images/right_grey.png" width="10"/></a>
+</div>
+<div class="account">
+	<span>已绑定手机号{{userphone}}</span>
+	<a ui-sref="modifyphone({oldphone:userphone})" class="right-arrow"><img src="images/right_grey.png" width="10"/></a>
+</div>
+<div class="account">
+	<span>登录密码</span>
+	<a ui-sref="modifyphonelist()"  class="right-arrow"><img src="images/right_grey.png" width="10"/></a>
+</div>
+<div class="payBtn exitLog"><input value="退出登录" type="button"/></div>

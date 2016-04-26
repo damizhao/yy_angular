@@ -1,0 +1,8 @@
+<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>找回密码</div>-->
+<yy-header title="找回密码" hideBackBtn="false"></yy-header>
+<form  name="myForm">
+	<p class="loginInfo"><input name="phone" ng-model="params.phone" type="text" required placeholder="请输入手机号码" ng-blur='fnBlur1()' ng-focus='fnFocus()'/></p>
+	<span class="phoneEor" ng-show="phoner">请输入正确手机号码</span>
+	<p class="loginInfo loginD"><input name="code" ng-model="params.code" type="text" placeholder="短信验证码"/><span class="verification" ng-class="paraclass" ng-click="verification()" ng-bind="paracont"></span></p>
+</form>
+<div class="payBtn loginBtn mt_20"><input value="下一步" type="button" ng-click="NextmodifyPass()"/></div>

@@ -1,0 +1,21 @@
+<div ng-controller='PayController'>
+	<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>账户充值</div>-->
+	<yy-header title="账户充值" hideBackBtn="false"></yy-header>
+	<div class="account">
+		<span>当前账户：</span><span>{{userphone}}</span>
+	</div>
+	<div class="account-tips">
+		<p>当前账户余额不足,</p>
+		<p>为了不影响你的上网体验，请及时充值哦！</p>
+	</div>
+	<div class="recharge">
+		<h3>选择充值面额</h3>
+		<div item-pay payData='payData' payVal='payVal'></div>
+	</div> 
+	<div class="payBtn bc_fff"><input value="立刻充值" type="button" ng-click="payBind()"/></div>
+	<div class="paytips">
+		<p>温馨提示:</p>
+		<p>发票信息可以通过会员中心-资金管理进行索取</p>
+	</div>
+</div>
+

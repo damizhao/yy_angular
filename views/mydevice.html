@@ -1,0 +1,7 @@
+<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>修改手机号</div>-->
+<yy-header title="我的设备" hideBackBtn="false"></yy-header>
+<div class="account" ng-repeat="list in lists">
+	<span>设备编号：{{list}}</span>
+	<span class="deviceStatus">正常</span>
+	<a ui-sref='devicemanage({deviceNum:list})' class="right-arrow"><img src="images/right_grey.png" width="10"/></a>
+</div>

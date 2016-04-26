@@ -1,0 +1,23 @@
+<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>会员中心</div>-->
+<yy-header title="会员中心" hideBackBtn="false"></yy-header>
+<div class="mc-top">
+	<p>欢迎回来，{{username}}
+	<a ui-sref="mencentinfo()" class="right-arrow"><img src="images/right_white.png" width="10"/></a>
+	</p>
+</div>
+<div class="account">
+	<img src="images/order.png" width='15'/>
+	<span>我的订单</span>
+	<a  class="right-arrow"><img src="images/right_grey.png" width="10"/></a>
+</div>
+<div class="account">
+	<img src="images/catalog.png" width='15'/>
+	<span>我的设备</span>
+	<a ui-sref="mydevice" class="right-arrow"><img src="images/right_grey.png" width="10"/></a>
+</div>
+<div class="account">
+	<img src="images/capital.png" width='15'/>
+	<span>我的资金</span>
+	<a ui-sref='mycapital({userphone:userphone})' class="right-arrow"><img src="images/right_grey.png" width="10"/></a>
+</div>
+<div class="payBtn exitLog"><input value="退出登录" type="button"/></div>

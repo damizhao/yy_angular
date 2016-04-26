@@ -1,0 +1,12 @@
+<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>修改手机号</div>-->
+<yy-header title="修改手机号" hideBackBtn="false"></yy-header>
+<div class="pay-right">
+	<p>更换手机号以后，你可以使用新号码登录</p>
+	<P>当前号码：<b class="fc_f00">{{oldphone}}</b></P>
+</div>
+<form name="myForm">
+	<p class="loginInfo"><input name="phone" ng-model="params.phone" type="text" required placeholder="请输入手机号码" ng-blur='fnBlur1()' ng-focus='fnFocus()'/></p>
+	<span class="phoneEor" ng-show="phoner">请输入正确手机号码</span>
+	<p class="loginInfo loginD"><input name="code" ng-model="params.code" type="text" placeholder="短信验证码"/><span class="verification" ng-class="paraclass" ng-click="verification()" ng-bind="paracont"></span></p>
+</form>
+<div class="payBtn mt_20"><input value="保存" type="button" class=" bc_46cf14" ng-click="phoneSave()"/></div>

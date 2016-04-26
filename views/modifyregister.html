@@ -1,0 +1,8 @@
+<!--<div class="backBar"><a href="#" class="GoBack"><img src="images/backkey.png" width="14"/></a>用户注册</div>-->
+<yy-header title="用户注册" hideBackBtn="false"></yy-header>
+<div class="loginTips">
+	<p>{{phoneNum}}</p>
+	<p>已经是游友会员，确定使用该账户吗？</p>
+</div>
+<div class="payBtn"><input value="是的，使用该账户登录" type="button" ui-sref='signIn({phNum:phoneNum})'/></div>
+<div class="payBtn loginBtn mt_10"><input value="不是，注册一个新会员" type="button" ui-sref='register'/></div>
